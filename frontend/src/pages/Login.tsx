@@ -1,3 +1,3 @@
 export const Login = () => {
-  return <div>Login</div>;
+  return <div style={{color: "red"}}>Login</div>;
 };
