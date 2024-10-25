@@ -1,11 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import { Login } from './pages';
+import { LoginForm } from './pages';
 import './sass/app.scss';
+import { AuthProvider } from './context/AuthContext';
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
+		<AuthProvider>
+			<Routes>
+      <Route path="/" element={<LoginForm />} />
     </Routes>
+		</AuthProvider>
+    
   );
 };
