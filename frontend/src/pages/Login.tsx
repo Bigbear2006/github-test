@@ -1,4 +1,3 @@
-// LoginForm.tsx
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useAuth } from "../context/AuthContext";
@@ -26,7 +25,7 @@ export const LoginForm: React.FC = () => {
       ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
-            <label>Имя пользователя</label>
+            <label>имя пользователя</label>
             <input {...register("username", { required: true })} />
           </div>
           <div>
@@ -39,5 +38,3 @@ export const LoginForm: React.FC = () => {
     </div>
   );
 };
-
-
